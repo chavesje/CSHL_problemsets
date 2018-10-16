@@ -1,3 +1,5 @@
 #!/usr/bin/env python3
-My_name = "julie chaves"
-print ("julie chaves")
+my_name = "julie chaves"
+my_favorite_color = "blue"
+print(my_name , my_favorite_color)
+
