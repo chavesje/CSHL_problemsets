@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
-ten = 10
-twenty = 20
+import sys
+ten = sys.argv[1]
+twenty = sys.argv[2]
+
 if ten < twenty:
 	print ('yes')
 else:
