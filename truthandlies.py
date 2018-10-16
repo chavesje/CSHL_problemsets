@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-import sys
-ten = sys.argv[1]
-twenty = sys.argv[2]
+ten = -10
 
-if ten < twenty:
-	print ('yes')
+if ten < 0:
+	print('negative')
+elif ten > 0:
+	print('positive')
 else:
-	print ('oh hell no')
+	print('zero')
 
