@@ -1,0 +1,226 @@
+    1  cd /bin/
+    2  cd /bin/ 
+    3  ls
+    4  ls -1
+    5  ls -1t
+    6  man ls 
+    7  ls -1
+    8  cd /bin/
+    9  ls -1
+   10  1s -1 | head
+   11  cd /bin/
+   12  ls -1t | head
+   13  date ; sleep 2 ; date
+   14  man sleep 
+   15  cd ~ 
+   16  grep Chr7 cuffdiff.txt > fav_chr_cuffdiff.txt 
+   17  grep Chr9 cuffdiff.txt >> fav_chr_cuffdiff.txt
+   18  cd ~
+   19  grep Chr7 cuffdiff.txt > fav_chr_cuffdiff.txt
+   20  man grep
+   21  man gre
+   22  grep Chr7 cuffdiff.txt
+   23  pwd
+   24  ls
+   25  ls desktop
+   26  rm Desktop/cuffdiff.webarchive 
+   27  ls Desktop
+   28  mv Downloads/cuffdiff.txt .
+   29  ls .
+   30  mkdir problem sets
+   31  ls
+   32  mkdir problem_sets
+   33  ls
+   34  rm problem sets
+   35  rm -rf  problem sets
+   36  ls
+   37  cd problem_sets/
+   38  mkdir set1
+   39  cd set
+   40  cd set1/
+   41  mv ../../cuffdiff.txt .
+   42  ls
+   43  cd~
+   44  cd ~
+   45  ls
+   46  cd problem_sets
+   47  ls
+   48  cd set1
+   49  grep Chr7 cuffdiff.txt 
+   50  grep Chr7 cuffdiff.txt > fav_chr_cuffdiff.txt
+   51  grep Chr9  cuffdiff.txt >> fav_chr_cuffdiff.txt
+   52  man grep
+   53  man mkdir
+   54  man rm
+   55  ls
+   56  cd problem_sets/
+   57  ls
+   58  ls -a
+   59  cd ..
+   60  ls -lhai
+   61  cd problem_sets/
+   62  cd ..
+   63  ls
+   64  mv .git ./problem_sets/
+   65  cd problem_sets/
+   66  ls -a
+   67  cat git_exercises.txt.save 
+   68  ls
+   69  git commit -m 'added a line of text'
+   70  git push
+   71  ls
+   72  git add git_exercises.txt.save 
+   73  mv git_exercises.txt.save git_exercises.txt
+   74  ls
+   75  git add git_exercises.txt 
+   76  git commit -m 'added a line of text'
+   77  git push
+   78  man ls
+   79  nano hola2.txt
+   80  git add hola2.txt
+   81  git commit -m 'added hola2'
+   82  git push origin master
+   83  $ ssh-keygen -t rsa -b 4096 -C "juliechaves.fpa@gmail.com"
+   84  ssh-keygen -t rsa -b 4096 -C "juliechaves.fpa@gmail.com"
+   85  eval "$(ssh-agent -s)"
+   86  Agent pid 59566
+   87  Host *
+   88   AddKeysToAgent yes
+   89   UseKeychain yes
+   90   IdentityFile ~/.ssh/id_rsa
+   91  ssh-add -K ~/.ssh/id_rsa
+   92  cd problem sets
+   93  cd problem_sets
+   94  mkdir files
+   95  ls
+   96  wget 
+   97  wget https://raw.githubusercontent.com/prog4biol/pfb2018/master/files/sequences.nt.fa
+   98  add sequences.nt.fa
+   99  git add sequences.nt.fa
+  100  wc sequences.nt.fa
+  101  man head
+  102  head sequences.nt.fa
+  103  man tail
+  104  tail sequences.nt.fa
+  105  grep sequences.nt.fa
+  106  grep > sequences.nt.fa
+  107  grep '>' sequences.nt.fa
+  108  ls -lh
+  109   git checkout sequences.nt.fa
+  110  ls -lh
+  111  grep ">" sequences.nt.fa 
+  112  grep '>' sequences.nt.fa 
+  113  grep \> sequences.nt.fa 
+  114  man mvt
+  115  man mv
+  116  git add cancer_genes.fasta
+  117  mv sequences.nt.fa > cancer_genes.fasta
+  118  cd cancer_genes.fasta 
+  119  ls
+  120  wget  https://raw.githubusercontent.com/prog4biol/pfb2018/master/files/cuffdiff.txt
+  121  head cuffdiff.txt
+  122  man sort
+  123  sort 'log2(fold_change)' cuffdiff.txt 
+  124  sort cuffdiff.txt 
+  125  sort 'log2(fold_change)' cuffdiff.txt 
+  126  sort cuffdiff.txt 'log2(fold_change)'
+  127  head cuffdiff.txt 
+  128  man sort
+  129  info sort
+  130  man sort
+  131  head cuffdiff.txt 
+  132  head cuffdiff.txt | sort -k1
+  133  head cuffdiff.txt | sort -k10
+  134  head cuffdiff.txt | sort -k10 | cut -F 10
+  135  man cut
+  136  head cuffdiff.txt | sort -k10 | cut -f 10
+  137  head cuffdiff.txt | sort -rk10 | cut -f 10
+  138   cuffdiff.txt | sort -rk10
+  139  sort -rk10 cuffdiff.txt 
+  140  sort -rk10 cuffdiff.txt > sorted.cuffdiff.out
+  141  ls
+  142  man print
+  143  man head
+  144  man sort
+  145  man sort
+  146  sort -k pos1, pos100 sorted.cuffdiff.out 
+  147  sort -kpos1,pos100 sorted.cuffdiff.out 
+  148  sort -kPOS1,POS100 sorted.cuffdiff.out 
+  149  man sort
+  150  sort -kPOS1[,POS100] sorted.cuffdiff.out 
+  151  man sort
+  152  sort -k pos1[,pos100] sorted.cuffdiff.out 
+  153  man sort
+  154  sort=pos1[,pos100] sorted.cuffdiff.out 
+  155  head sorted.cuffdiff.out 
+  156  head sorted.cuffdiff.out | wc -l
+  157  man head
+  158  head -n100 sorted.cuffdiff.out 
+  159  head -n100 sorted.cuffdiff.out |wc -l
+  160  sort -rk10 cuffdiff.txt | head -n100
+  161  sort -rk10 cuffdiff.txt | head -n100 | wc -l
+  162  sort -rk10 cuffdiff.txt | head -n100 > top100.sorted.cuffdiff.out
+  163  sort -rk10 cuffdiff.txt | head -n100 | cut3
+  164  man cut
+  165  sort -rk10 cuffdiff.txt | head -n100 | cut -f3
+  166* 
+  167  sort -rk10 cuffdiff.txt | head -n100 | cut -f3 > differentially.expressed.genes.txt
+  168  ls
+  169  mv cancer_genes.fasta > files
+  170  cd files
+  171  ls
+  172  cd../
+  173  ../
+  174  cd ../
+  175  ../
+  176  cd ../
+  177  cd problem sets
+  178  cd problem_sets
+  179  ls
+  180  mv cancer_genes.fasta > files
+  181  ../
+  182  cd ../
+  183  cd problem_sets/
+  184  mv cancer_genes.fasta  files
+  185  git add files/cancer_genes.fasta 
+  186  git commit -m 'adding cancer-genes.fasta'
+  187  git push
+  188  git status
+  189  nano mysequences.txt
+  190  ls
+  191  git add mysequences.txt 
+  192  git commit -m 'adding mysequences.txt'
+  193  git push
+  194  mkdir fastas
+  195  cp files/cancer_genes.fasta 
+  196  cp files/cancer_genes.fasta fasta
+  197  cd fasta
+  198  cd ../fasta
+  199  mv fasta problem_sets
+  200  ls
+  201  cp files/cancer_genes.fasta fasta
+  202  cd fasta
+  203  ../
+  204  cd ..
+  205  cd problem_sets
+  206  ls
+  207  cp files/cancer_genes.fasta fastas
+  208  cd fastas
+  209  ls
+  210  cd problem_sets
+  211  ../
+  212  cd ..?
+  213  cd ..
+  214  cd files
+  215  ls
+  216  rm cancer_genes.fasta 
+  217  ls
+  218  git add *
+  219  git commit -m 'update'
+  220  git push 
+  221  git status
+  222  git add -u 
+  223  git commit -m 'sync'
+  224  git push
+  225  git status
+  226  history > unixBasics.history.txt
