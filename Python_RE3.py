@@ -4,9 +4,9 @@ fo = open('Python_07.fasta','r')
 import re
 
 for line in fo:
-	found=re.findall(r"^>(\S+)\s",line)
-	if found:
-		print(found)
+	Extracted_seq_name=re.findall(r"^>(\S+)\s",line)
+	if Extracted_seq_name:
+		print(Extracted_seq_name)
 
 fo.close()
 	
