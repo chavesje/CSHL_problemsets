@@ -5,7 +5,8 @@ import re
 
 for line in fo:
 	found=re.findall(r"^>(\S+)\s",line)
-	print(found)
+	if found:
+		print(found)
 
 fo.close()
 	
